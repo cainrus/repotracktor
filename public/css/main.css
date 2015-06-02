@@ -1,0 +1,103 @@
+body {
+    background-color: #000;
+    overflow-x: hidden;
+}
+
+body .alert {
+  padding: 10px;
+}
+
+body .alert-dismissible .close {
+  right: 0;
+}
+
+button {
+  outline: none !important;
+}
+
+h1 {
+  display: inline;
+}
+
+.opacity-light {
+  opacity: 0.75;
+}
+
+#repository {
+  margin-bottom: 20px;
+}
+
+#repository input {
+  -moz-transition: all 0.6s ease-in-out;
+  -o-transition: all 0.6s ease-in-out;
+  -webkit-transition: all 0.6s ease-in-out;
+  transition: all 0.6s ease-in-out;
+}
+
+#repository input:focus {
+  -moz-box-shadow: inset 0 0 15px #51cbee;
+  -webkit-box-shadow: inset 0 0 15px #51cbee;
+  box-shadow: inset 0 0 15px #51cbee;
+}
+
+table td {
+  vertical-align: middle;
+}
+
+table td span.octicon {
+  font-size: 200%;
+  margin-right: 5px;
+}
+
+table td span.badge {
+  vertical-align: top;
+  position: absolute;
+  margin-left: -10px;
+}
+
+#authorize {
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+
+  position: relative;
+  right:0;
+  opacity: 1;
+  top: 0;
+  visibility: visible;
+}
+
+#authorize.offscreen {
+  opacity: 0;
+  top: -500px;
+  position: relative;
+  visibility: hidden;
+}
+
+.toggler {
+  cursor: pointer;
+}
+
+td.rate-cell {
+  width: 150px;
+}
+
+.rateControl {
+  float: right;
+}
+
+.rateControl .disabled {
+  width: 33px;
+}
+
+.rateControl .rate-down span,
+.rateControl .rate-up span {
+  font-weight: bold;
+  font-size: 90%;
+
+}
+
+.error-container {
+  color: #fff;
+}

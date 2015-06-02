@@ -1,0 +1,7 @@
+.idea
+README.md
+public/vendors
+.DS_Store
+node_modules/
+bower_components
+npm-debug.log

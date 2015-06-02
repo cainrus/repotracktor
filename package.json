@@ -1,0 +1,33 @@
+{
+  "name": "repotrack",
+  "version": "1.0.0",
+  "description": "repository tracker",
+  "main": "bin/www",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "setup": "$(npm bin)/gulp setup",
+    "start": "DEBUG=www:server node ./bin/www",
+    "postinstall": "$(npm bin)/bower install && npm run setup"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cainrus/repotracker"
+  },
+  "author": "cainrus",
+  "license": "ISC",
+  "dependencies": {
+    "bluebird": "^2.9.27",
+    "bower": "^1.4.1",
+    "cookie-parser": "^1.3.5",
+    "debug": "^2.2.0",
+    "express": "^4.12.4",
+    "express-session": "^1.11.2",
+    "gulp": "^3.8.11",
+    "gulp-symlink": "^2.1.0",
+    "hbs": "^3.0.1",
+    "mongodb": "^2.0.33",
+    "querystring": "^0.2.0",
+    "underscore": "^1.8.3"
+  },
+  "devDependencies": {}
+}
