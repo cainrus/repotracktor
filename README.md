@@ -21,7 +21,8 @@ To start the app you will need to provide next environment variables:
 * GITHUB_OAUTH_SECRET - github oauth client secret
 * GITHUB_OAUTH_ID - github ouath client id
 
-Example: MONGODB_URL=mongodb://usr:pass@host:3000/db_name GITHUB_OAUTH_SECRET=f2fss8dg GITHUB_OAUTH_ID=123 npm start
+Example:
+```MONGODB_URL=mongodb://usr:pass@host:3000/db_name GITHUB_OAUTH_SECRET=f2fss8dg GITHUB_OAUTH_ID=123 npm start```
 
 Github credentials can be obtained from the following link https://github.com/settings/applications/new
 Unless you want to install local mongodb, you can use services of https://mongolab.com
