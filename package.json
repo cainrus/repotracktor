@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "setup": "$(npm bin)/gulp setup",
     "start": "DEBUG=www:server node ./bin/www",
-    "postinstall": "$(npm bin)/bower install && npm run setup"
+    "postinstall": "if [ -d \"$OPENSHIFT_REPO_DIR\" ]; then (export HOME=\"$OPENSHIFT_REPO_DIR\"/..; $(npm bin)/bower install) else ($(npm bin)/bower install) fi && npm run setup"
   },
   "repository": {
     "type": "git",
