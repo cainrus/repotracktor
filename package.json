@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "DEBUG=www:server node ./bin/www",
-    "postinstall": "if [ -d \"$OPENSHIFT_REPO_DIR\" ]; then (HOME=$HOME/app-root/runtime $(npm bin)/bower install && $(npm bin)/gulp setup) else ($(npm bin)/bower install && $(npm bin)/gulp setup) fi"
+    "postinstall": "$(npm bin)/bower install && $(npm bin)/gulp setup"
   },
   "repository": {
     "type": "git",
