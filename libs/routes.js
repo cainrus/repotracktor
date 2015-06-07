@@ -92,8 +92,7 @@ module.exports = function(app) {
     app.get('/authorize', function(req, res) {
 
         authenticate(req.query.code, function(err, token) {
-            req.session.token = token;
-            var result = err || !token ? {"error": "bad_code"} : { "token": token };
+            var result = err || !token ? {"error": err || 'Unable to get token'} : { "token": token };
             res.json(result.token);
         });
 
