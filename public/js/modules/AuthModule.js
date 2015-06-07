@@ -10,7 +10,7 @@
 
     var STORAGE_KEY = 'access_token';
 
-    define(["jquery", "../utils/LocalStorage"],
+    define(["jquery", "../utils/localStorage"],
 
         function ($, storage) {
             return {

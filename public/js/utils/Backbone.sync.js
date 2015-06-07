@@ -1,6 +1,6 @@
 'use strict';
 
-define(['jquery', 'underscore', './LocalStorage', '../modules/AuthModule'], function($, _, storage, auth){
+define(['jquery', 'underscore', './localStorage', '../modules/AuthModule'], function($, _, storage, auth){
 
     var sync = function (method, model, options) {
 
