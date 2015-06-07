@@ -37,7 +37,6 @@ define(['marionette',
 
 
         changeRepository: function(data) {
-            this.resetState();
             if (!this.repositoryPattern.test(data.value)) {
               data.isValid = false;
               this.channel.trigger('repository:error', 'repository example: https://github.com/owner/repository');
@@ -47,7 +46,7 @@ define(['marionette',
                 storage.setItem('lastRepository', data.value);
               }
             }
-        },
+        }
 
     });
 
