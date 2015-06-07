@@ -67,22 +67,6 @@ define(['marionette', 'underscore',
                 });
               }.bind(this));
 
-              // Get user-models based on collaborators (more data).
-              // var userList = this.forks.pluck('login')
-              //   .map(function(login){
-              //     var user = new UserModel({login: login});
-              //     user.promise = user.fetch({});
-              //     return user;
-              // }.bind(this));
-              //
-              // $.when.apply($, _.pluck(userList, 'promise')).done(function(){
-              //   var userCollection = new UserCollection(userList)
-              //   this.channel.command('collaborators:render', {
-              //     collection: userCollection
-              //   });
-              // }.bind(this));
-
-
             }.bind(this)).fail(function(err){
                 this.channel.trigger('forks:error', err);
             }.bind(this));

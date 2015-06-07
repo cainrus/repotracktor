@@ -2,8 +2,6 @@ define(['marionette',
     "js/views/RateView",
     "text!/templates/collaborators-list.tpl"], function (Marionette, RateView, template) {
     var CollaboratorsListView = Marionette.ItemView.extend({
-        // childView: RateView,
-        // childViewContainer: ".rateControl",
         template: template,
         initialize: function(options) {
 

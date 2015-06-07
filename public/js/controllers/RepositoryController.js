@@ -49,12 +49,6 @@ define(['marionette',
             }
         },
 
-        resetState: function(){
-          // if (this.layout.views.error) {
-          //   this.layout.views.error.destroy();
-          // }
-        }
-
     });
 
     return RepositoryController;

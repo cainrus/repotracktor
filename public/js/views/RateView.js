@@ -1,5 +1,4 @@
 define(["marionette", "underscore",
-// 'js/models/RateModel'
         "text!/templates/rate.tpl"], function(Marionette, _, template ) {
     var RateView = Marionette.ItemView.extend({
 

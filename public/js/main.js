@@ -77,9 +77,6 @@
                 deps : ['backbone'],
                 exports: 'Backbone.Wreqr'
             },
-            //eventbinder : {
-            //    deps : ['backbone']
-            //},
             babysitter : {
                 deps: ['backbone']
             },

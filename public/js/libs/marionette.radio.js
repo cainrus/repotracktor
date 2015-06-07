@@ -12,10 +12,5 @@ define([
             Radio.channel(this.channelName);
     };
 
-    // Radio._eventsApi = _.wrap(function(fn, obj, action, name, rest){
-    //
-    //   return fn.call(this, obj, action, name, rest);
-    // });
-
     return Marionette;
 });

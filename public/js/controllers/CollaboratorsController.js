@@ -19,7 +19,6 @@ define(['marionette', 'underscore',
 
         initialize: function(options) {
             this.channel = options.channel;
-            // this.channel.on('repository:change', this.changeRepository.bind(this));
             this.layout = new CollaboratorsLayoutView({
               channel: this.channel,
               views: {
