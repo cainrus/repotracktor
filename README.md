@@ -30,3 +30,6 @@ Unless you want to install local mongodb, you can use services of https://mongol
 TODO:
 * Fix network performance. Build require.js modules into one file.
 * Fix minor security issue. Github api requests have to be moved to server from client
+
+Demo:
+http://repotracktor-cainrus.rhcloud.com/
